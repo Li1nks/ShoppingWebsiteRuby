@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "webstore/show"
   get "accounts/index"
   get "pages/home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -26,4 +27,6 @@ Rails.application.routes.draw do
   post "/logout", to: "sessions#destroy"
   get "/logout", to: "sessions#destroy"
   get "accounts", to: "accounts#index"
+  get "new", to: "users#new"
+  get "webstore", to: "webstore#webstoreShow"
 end

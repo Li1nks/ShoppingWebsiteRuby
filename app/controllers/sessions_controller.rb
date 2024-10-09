@@ -7,14 +7,22 @@
 
 class SessionsController < ApplicationController
   def create
-    @user = User.find_by(username: params[:username])
+    @user = User.find_by("usernam = ? OR email = ?", params[:identifier]. params[:identifier])
 
-    if !!@user && @user.authenticate(params[:password])
-            session[:user_id] = @user.id
-            redirect_to user_path
+    if @user && @user.authenticate(params[:password])
+
+      # Log user in
+      session[:user_id] = @user.id
+      redirect_to root_path
     else
-      message = "There seems to be something wrong! Make sure your username and password are correct."
-      redirect_to login_path, notice: message
+      flash[:error] = "Invalid username/email or password."
+      redirect_to login_path
     end
+  end
+
+  def destroy
+        # logic to log user out
+        session[:user_id] = nil
+        redirect_to login_path
   end
 end

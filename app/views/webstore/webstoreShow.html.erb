@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webstore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your desired background */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      position: relative;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 0 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .navbar button:hover {
+      background-color: #45a049;
+    }
+
+    .content {
+      margin-top: 80px; /* Space for navbar */
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <button onclick="location.href='/shopping'">Shopping</button>
+    <button onclick="location.href='/about'">About Us</button>
+    <button onclick="location.href='/location'">Location</button>
+    <button onclick="location.href='/checkout'">Checkout 🛒</button>
+    <button onclick="location.href='/profile'"><%= current_user.username || current_user.email %></button>
+  </div>
+
+  <div class="content">
+    <h1>Welcome to the Webstore!</h1>
+    <p>Find me in app/views/webstore/show.html.erb</p>
+    <!-- Add your webstore content here -->
+  </div>
+
+</body>
+</html>
