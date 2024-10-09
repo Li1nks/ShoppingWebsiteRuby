@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get "accounts/index"
+=======
+>>>>>>> 0813f8c (Added Home page with proper routing, Added login page, added backgrounds and learned a little CSS. 10/4/24)
   get "pages/home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
