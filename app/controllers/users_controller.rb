@@ -41,7 +41,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password)  # Ensure only permitted parameters are accepted
+    params.require(:user).permit(:username, :email, :password, :password_confirmation)  # Ensure only permitted parameters are accepted
   end
 
   # New method to restrict access to logged-in users

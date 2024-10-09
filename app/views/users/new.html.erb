@@ -48,7 +48,7 @@
         margin-top: 10px;
       }
 
-      input[type="text"], input[type="password"] {
+      input[type="text"], input[type="password"], input[type="email"] {
         padding: 10px;
         margin-top: 5px;
         border-radius: 5px;
@@ -85,12 +85,26 @@
       <h2>Create Account</h2>
 
       <%= form_for @user do |f| %>
+
+        <!-- Username field -->
         <%= f.label :username %>
         <%= f.text_field :username %><br>
 
+        <!-- Email field -->
+        <%= f.label :email %>
+        <%= f.email_field :email %><br>
+
+        <!-- Password field -->
         <%= f.label :password %>
         <%= f.password_field :password %><br>
+
+        <!-- Password confirmation field -->
+        <%= f.label :password_confirmation, "Confirm Password" %>
+        <%= f.password_field :password_confirmation %><br>
+
+        <!-- Submit button -->
         <%= f.submit "Create Account", class: "button" %>
+
       <% end %>
     </div>
   </body>
