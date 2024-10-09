@@ -1,2 +1,12 @@
-<h1> User Info </h1>
+<h1>User Profile</h1>
 
+<p><strong>ID:</strong> <%= @user.id %></p>
+<p><strong>Username:</strong> <%= @user.username %></p>
+
+<!-- Display the hashed password if necessary, though showing passwords is generally discouraged -->
+<p><strong>Password (hashed):</strong> <%= @user.password_digest %></p>
+
+<!-- Edit and Delete links -->
+<%= link_to 'Edit', edit_user_path(@user), class: "button" %> |
+<%= link_to 'Back to Users List', accounts_path, class: "button" %>
+<%= link_to 'Delete User', user_path(@user), method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %>

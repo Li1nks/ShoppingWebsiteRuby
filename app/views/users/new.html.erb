@@ -1,10 +1,97 @@
-<h1> New Users Page </h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Fwend incomin' Welcome!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-image: url('https://img.freepik.com/premium-vector/illustration-grocery-shopping-supermarket_873609-1306.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
 
-<%= form_for @user do |f| %>
-    <%= f.label :username%>
-    <%= f.text_field :username %><br>
-    <%= f.label :password %>
-    <%= f.password_field :password%><br>
-    <%= f.submit "Create Account"%>
-<% end %>
+      h1 {
+        font-size: 36px;
+        color: #fff; /* Set text color to stand out from the background */
+        text-shadow: 2px 2px 4px #000; /* Add shadow for better readability */
+      }
 
+      h2 {
+        font-size: 20px;
+        color: #e8dcdc;
+      }
+
+      p {
+        font-size: 18px;
+        color: #fff;
+        text-shadow: 1px 1px 3px #000;
+      }
+
+      .button-container {
+        margin-top: 30px;
+        background-color: rgba(0, 0, 0, 0.5); /* Transparent background to make form visible */
+        padding: 20px;
+        display: inline-block;
+        border-radius: 10px;
+      }
+
+      label {
+        color: #fff;
+        font-size: 18px;
+        text-shadow: 1px 1px 3px #000;
+        display: block;
+        margin-top: 10px;
+      }
+
+      input[type="text"], input[type="password"] {
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 0;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome Newcomer</h1>
+    <p>Please enter yer info buddy!</p>
+    
+    <div class="button-container">
+      <h2>Create Account</h2>
+
+      <%= form_for @user do |f| %>
+        <%= f.label :username %>
+        <%= f.text_field :username %><br>
+
+        <%= f.label :password %>
+        <%= f.password_field :password %><br>
+        <%= f.submit "Create Account", class: "button" %>
+      <% end %>
+    </div>
+  </body>
+</html>

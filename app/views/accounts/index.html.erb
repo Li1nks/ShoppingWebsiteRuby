@@ -1,0 +1,53 @@
+<h1>All User Accounts</h1>
+<style>
+.button {
+  background-color: #4CAF50; /* Default green color for buttons */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Delete button specific styling */
+.button[data-method='delete'] {
+  background-color: #e74c3c; /* Red for delete */
+}
+
+.button[data-method='delete']:hover {
+  background-color: #c0392b;
+}
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.username %></td>
+        <td>
+          <%= link_to 'Show', user_path(user), class: "button" %> |
+          <%= link_to 'Edit', edit_user_path(user), class: "button" %> |
+          <!-- Delete button with confirmation popup -->
+          <%= button_to 'Delete', user_path(user), method: :delete, data: { confirm: "Are you sure you want to delete this user?" }, class: "button" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

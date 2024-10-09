@@ -1,35 +1,54 @@
-# Has a action that will give view access to a new User Instance
-# Like Login action but will create and save new user db entry
-# then shows an action that will give access to data for the currently
-# logged in user
-#
-# Using strong params to declare what we want and allow to be
-# injected for security
-#
-#
-
 class UsersController < ApplicationController
+  before_action :require_login, only: [ :show ]  # Ensure users are logged in to access their profile
+
   def new
-        @user = User.new
+    @user = User.new
   end
 
   def create
-        @user = User.new(user_params)
-        if @user.save
-          session[:user_id] = @user.id
-          redirect_to root_path
-        else
-          render :new
-        end
+    @user = User.new(user_params)
+    if @user.save
+      session[:user_id] = @user.id  # Log the user in after successful registration
+      flash[:notice] = "Account created successfully!"  # Success message
+      redirect_to root_path
+    else
+      flash[:alert] = "There was an error creating your account. Please try again."  # Error message
+      render :new  # Re-render the new user form with error messages
+    end
   end
 
   def show
     @user = User.find(params[:id])
   end
 
+  def index
+        @users.User.all
+  end
+
+  def destroy
+    @user = User.find(params[:id])
+    if @user
+      puts "User found: #{@user.username}"  # Debugging line
+      @user.destroy
+      flash[:notice] = "User deleted successfully."
+      redirect_to root_path
+    else
+      flash[:alert] = "User not found."
+      redirect_to root_path
+    end
+  end
+
   private
 
   def user_params
-        params.require(:user).permit(:username, :password)
+    params.require(:user).permit(:username, :password)  # Ensure only permitted parameters are accepted
   end
-end # class end
+
+  # New method to restrict access to logged-in users
+  def require_login
+    unless session[:user_id]
+      flash[:alert] = "You must be logged in to access this section"
+      redirect_to login_path  # Redirect to login page if user is not logged in
+    end
+  end
+end
