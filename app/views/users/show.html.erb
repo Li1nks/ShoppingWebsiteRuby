@@ -1,3 +1,16 @@
+<%# 
+Written By : Michael Watkins
+Date : 10/9/24
+Desc : 
+Shows the information about users to potentially administrators to manage data and confirm
+that the db was handling the information correctly. Allows for addition, deletion, and viewing of data stored in our DB. 
+
+To-DO: 
+-Better UI to make it look better and easier toe traverse. 
+-Allow only access to account information to either that particular user and or only admins, may need to make a seperate page that is only for that user. 
+-Need to fix the Delete User, user_path as it does not work compared to the button version on the index.html.erb file. 
+ %>
+
 <h1>User Profile</h1>
 
 <p><strong>ID:</strong> <%= @user.id %></p>
