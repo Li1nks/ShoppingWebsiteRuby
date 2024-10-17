@@ -7,13 +7,13 @@
 
 class SessionsController < ApplicationController
   def create
-    @user = User.find_by("usernam = ? OR email = ?", params[:identifier]. params[:identifier])
+    @user = User.find_by("username = ? OR email = ?", params[:identifier], params[:identifier])
 
     if @user && @user.authenticate(params[:password])
 
       # Log user in
       session[:user_id] = @user.id
-      redirect_to root_path
+      redirect_to webstore_path
     else
       flash[:error] = "Invalid username/email or password."
       redirect_to login_path

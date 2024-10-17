@@ -8,6 +8,7 @@ To-DO :
 -If the user doesn't exist I need to prompt my users to go towards the create an account
 -Maybe require either or the username and email but idk how that'd work.
 -Popups to communicate errors and allow for error handling. 
+-Ability to send a user that is loggin into the site from the login page to the main shopping page. 
  %>
 
 <!DOCTYPE html>
@@ -75,6 +76,11 @@ To-DO :
       .button:hover {
         background-color: #45a049;
       }
+      .userLogin-button{
+        background-color: #ff6208 /*Orange*/
+      }
+
+
     </style>
     <script>
       // Function to show an alert for errors
@@ -96,7 +102,7 @@ To-DO :
         <label for="password">Password:</label><br>
         <%= password_field_tag :password %><br><br>
         
-        <%= submit_tag "Login", class: "button" %>
+        <%= submit_tag "Login", class: "button"%>
       <% end %>
       <% if flash[:error] %>
         <script>showError("<%= flash[:error] %>");</script>
