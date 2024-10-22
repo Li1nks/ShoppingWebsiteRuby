@@ -22,7 +22,12 @@ class UsersController < ApplicationController
   end
 
   def index
-        @users.User.all
+        # @users.User.all
+        @users = User.all
+        if params[:check_schema]
+          @schema_info = User.schema
+          puts JSON.pretty_generate(@schema_info) # This will print the schema info to the Rails console
+        end
   end
 
   def destroy
@@ -50,5 +55,10 @@ class UsersController < ApplicationController
       flash[:alert] = "You must be logged in to access this section"
       redirect_to login_path  # Redirect to login page if user is not logged in
     end
+  end
+
+  def check_schema
+    @schema_info = User.schema
+    render json: @schema_info # Return schema information as JSON
   end
 end
