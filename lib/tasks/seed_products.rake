@@ -13,6 +13,7 @@ namespace :db do
         manufacturer: product_data[3].strip,
         price: product_data[4].strip.to_f,
         food_types: product_data[5].strip.split(",")
+        # Add image path aswell
       )
     end
 

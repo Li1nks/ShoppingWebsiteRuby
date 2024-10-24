@@ -29,4 +29,5 @@ Rails.application.routes.draw do
   get "accounts", to: "accounts#index"
   get "new", to: "users#new"
   get "webstore", to: "webstore#webstoreShow"
+  # get "product", to: "product#productSearch"
 end
