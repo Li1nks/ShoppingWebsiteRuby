@@ -1,0 +1,85 @@
+Sunrise Bacon, P001, 100, Farmer's Best, 12.50, Frozen, Meat, Crispy and savory bacon, perfect for breakfast or adding flavor to any dish.
+Golden Harvest Carrots, P002, 200, Green Valley Farms, 7.99, Fresh, Vegetable, Fresh, sweet carrots that are great for snacking or cooking.
+Crunchy Peanut Delight, P003, 50, Nutty Creations, 19.99, Non-Perishable, A delightful mix of crunchy peanuts and honey for a perfect snack.
+Ocean Fresh Salmon, P004, 150, SeaMaster Inc., 14.75, Frozen, Fish, Sustainably sourced salmon fillets, rich in omega-3 fatty acids.
+Sizzlin’ Steak Strips, P005, 90, Carnivore Classics, 24.50, Perishable, Meat, Tender strips of steak, marinated for flavor and ready for grilling.
+Berry Blast Yogurt, P006, 75, Dairy Supreme, 5.99, Perishable, Dairy, Creamy yogurt loaded with mixed berries for a delicious treat.
+Tropical Mango Slices, P007, 120, Fruitopia, 6.49, Fresh, Fruit, Sweet and juicy mango slices, perfect for smoothies or snacking.
+Whole Wheat Spaghetti, P008, 80, PastaHouse, 2.99, Non-Perishable, Pasta, Nutritious whole wheat spaghetti for a healthy pasta dish.
+Crunchy Cucumber Salad, P009, 200, Fresh Bounty, 4.50, Fresh, Vegetable, A refreshing mix of crunchy cucumbers, ideal for summer salads.
+Alpine Swiss Cheese, P010, 50, SwissDairy Co., 9.25, Perishable, Dairy, Creamy Swiss cheese with a mild nutty flavor, great for sandwiches.
+Sun-Dried Tomato Sauce, P011, 130, Bella Italia, 8.99, Non-Perishable, Sauce, Rich tomato sauce infused with sun-dried tomatoes for a zesty flavor.
+Grandma’s Apple Pie, P012, 60, Sweet Treats Bakery, 15.49, Frozen, Dessert, Classic apple pie made with fresh apples and a flaky crust.
+Farmhouse Organic Eggs, P013, 160, Happy Hens, 3.99, Fresh, Dairy, Farm-fresh organic eggs with rich flavor and vibrant yolks.
+Crispy Kale Chips, P014, 100, Nature’s Crunch, 7.49, Non-Perishable, Snacks, Light and crunchy kale chips seasoned to perfection.
+Herb-Roasted Chicken, P015, 180, Rustic Farms, 17.99, Frozen, Meat, Flavorful herb-marinated chicken, ready to bake and enjoy.
+Mountain Spring Water, P016, 250, Pure Waters Co., 1.50, Non-Perishable, Beverage, Refreshing spring water sourced from pristine mountain springs.
+Alaskan King Crab Legs, P017, 70, Ocean Delights, 29.99, Frozen, Seafood, Sweet and succulent king crab legs, perfect for special occasions.
+Spicy Sriracha Sauce, P018, 140, Heatwave Foods, 4.99, Non-Perishable, Sauce, Fiery Sriracha sauce that adds a spicy kick to any dish.
+Maple Syrup Pancakes, P019, 110, Sweet Maple Farms, 10.75, Frozen, Breakfast, Fluffy pancakes drizzled with rich maple syrup, perfect for breakfast.
+Zesty Lemon Hummus, P020, 90, Mediterranean Delights, 6.99, Perishable, Dip, Creamy hummus with a refreshing lemon twist, great for dipping.
+Creamy Almond Butter, P021, 100, NutriButters, 8.49, Non-Perishable, Spread, Smooth almond butter, perfect for spreading on toast or in smoothies.
+Triple Berry Granola, P022, 150, Healthy Harvest, 5.25, Non-Perishable, Cereal, Crunchy granola mixed with strawberries, blueberries, and raspberries.
+Gourmet Beef Patties, P023, 85, Grill Master, 13.99, Frozen, Meat, Premium beef patties, expertly seasoned for the grill.
+Coconut Milk Beverage, P024, 120, Tropicana Naturals, 3.99, Non-Perishable, Beverage, Creamy coconut milk, perfect for cooking or as a dairy alternative.
+Harvest Pumpkin Soup, P025, 70, SoupNMore, 5.49, Non-Perishable, Soup, Creamy pumpkin soup with spices for a warm, comforting meal.
+Sunflower Olive Oil, P026, 200, Golden Press Oils, 11.99, Non-Perishable, Oil, Light and flavorful sunflower oil, ideal for cooking and dressings.
+Blueberry Oatmeal Cookies, P027, 90, Cookie Jar Delights, 6.50, Non-Perishable, Snacks, Chewy oatmeal cookies packed with blueberries for a delicious treat.
+Smoky BBQ Ribs, P028, 60, Southern Grill, 18.49, Frozen, Meat, Tender BBQ ribs with a smoky flavor, ready to heat and serve.
+Classic Margherita Pizza, P029, Bella Pizzeria, 9.99, Frozen, Pizza, Traditional Margherita pizza topped with fresh mozzarella and basil.
+Organic Quinoa, P030, 110, Ancient Harvest, 4.99, Non-Perishable, Grains, Nutritious organic quinoa, a great base for salads and bowls.
+Tangy Citrus Dressing, P031, 95, Salad Joy, 3.25, Non-Perishable, Dressing, Bright and tangy dressing, perfect for drizzling over salads.
+Banana Nut Muffins, P032, 130, Muffin Magic, 7.75, Fresh, Bakery, Moist banana muffins with crunchy nuts, ideal for breakfast.
+Spiced Chai Latte, P033, 160, BrewMaster Co., 4.50, Non-Perishable, Beverage, A warming blend of spices and tea, perfect for cozy afternoons.
+Savory Garlic Breadsticks, P034, 100, BreadWorks, 5.99, Frozen, Bakery, Soft and chewy garlic breadsticks, perfect for dipping in sauces.
+Golden Honey Butter, P035, 70, Sweet Valley, 7.25, Perishable, Dairy, Creamy butter blended with sweet honey for a delightful spread.
+Crispy Spice Mixed Plater, P036, 25, Crispy Spice Halal, 11.43, Perishable, Fresh, A flavorful mix of spiced meats, perfect for sharing or snacking.
+Mama V's Blue Raspberry Gushers, P037, 100, Mama V, 15.34, Snacks, Chewy fruit snacks bursting with blue raspberry flavor.
+Papa B's Cherry Milk, P038, 40, Papa B, 6.43, Dairy, Creamy cherry-flavored milk, a sweet treat for kids of all ages.
+Tru Moo Chocolate Milk, P039, 75, Tru Moo, 4.34, Dairy, Rich and creamy chocolate milk made with real cocoa.
+Mr. Torgue's Clam Chowder, P040, 80, Torgue Firearms, 25.00, Soup, Non-Perishable, Hearty clam chowder packed with tender clams and EXPLOSIVE FLAAAAVOOR.
+Chicken Tikka Masala, P041, 54, Cumin n' Eat, 23.76, Meat, Perishable, Flavorful chicken tikka in a spiced tomato sauce, perfect with rice.
+Torgue's Explosive Jerky, P042, 80, Torgue Corp, 12.99, Perishable, Snacks, Jerky that packs a punch with explosive flavors, perfect for a snack on the go.
+Hyperion Precision Muffin Mix, P043, 60, Hyperion, 5.49, Non-Perishable, Baking, Create perfectly round muffins with this precise mix for baking enthusiasts.
+Jakobs Vintage Whiskey, P044, 150, Jakobs, 29.99, Non-Perishable, Beverage, Aged to perfection, this whiskey offers a smooth and robust flavor for connoisseurs.
+Malawan Energy Drink, P045, 100, Malawan, 3.99, Beverage, A refreshing energy drink that boosts your stamina while enhancing your gaming experience.
+Dahl Tactical Beef Jerky, P046, 70, Dahl, 7.99, Non-Perishable, Snacks, High-protein jerky with a tactical kick, ideal for adventurers on the move.
+Vladorf's Spicy Sausage, P047, 90, Vladorf, 9.99, Frozen, Meat, Gourmet sausages with a kick of spice, great for grilling at your next BBQ.
+Children of the Vault Granola Bars, P048, 200, COV, 2.49, Non-Perishable, Snacks, Chewy granola bars made from wholesome ingredients, perfect for a quick snack.
+Atlas Elite Protein Powder, P049, 150, Atlas, 25.00, Non-Perishable, Health, High-performance protein powder designed for the ultimate workout recovery.
+Eridium Infused Coffee, P050, 80, Eridium, 15.99, Beverage, Dark roast coffee infused with Eridium, providing an energizing boost for your day.
+COV Radical Energy Gummies, P051, 120, COV, 4.99, Non-Perishable, Snacks, Chewy gummies bursting with energy, perfect for fueling your adventures.
+Jakobs Fancy Ketchup, P052, 200, Jakobs, 3.75, Non-Perishable, Condiment, Gourmet ketchup with a hint of spice, perfect for elevating your fries and burgers.
+Dahl Farmhouse Pickles, P053, 90, Dahl, 5.25, Non-Perishable, Pickles, Crunchy pickles with a tangy flavor, perfect for sandwiches and snacking.
+Malawan Sparkling Water, P054, 150, Malawan, 1.99, Beverage, Crisp sparkling water with refreshing flavors that keep you hydrated during battles.
+Hyperion Instant Noodles, P055, 110, Hyperion, 1.50, Non-Perishable, Meal, Quick and easy noodles that come with a variety of flavors to choose from.
+Torgue's Inferno Hot Sauce, P056, 100, Torgue Corp, 8.50, Non-Perishable, Sauce, A fiery hot sauce that turns up the heat on any dish—handle with care!
+Nuka-Cola Quantum, P073, 100, Nuka-World, 2.99, Beverage, A refreshing soda with a glowing twist, guaranteed to give you a burst of energy.
+Radroach Snacks, P074, 200, Vault-Tec, 5.49, Non-Perishable, Snacks, Crispy snacks made from radroach meat—perfect for the adventurous eater.
+Stimpak Energy Bars, P075, 150, Vault 111, 3.99, Non-Perishable, Energy Bar, Packed with nutrients to restore health and boost stamina on your wasteland journey.
+Mirelurk Meat Pie, P076, 80, The Dugout Inn, 12.99, Perishable, Meal, A savory pie filled with Mirelurk meat and spices, favored by residents of the Commonwealth.
+Brahmin Burger, P077, 90, Big Mtn, 8.75, Perishable, Meal, A hearty burger made from freshly sourced Brahmin meat, served with a side of irradiated fries.
+Vault-Tec Brand Canned Beans, P078, 200, Vault-Tec, 1.99, Non-Perishable, Canned Food, Classic canned beans, a staple for any Vault dweller’s survival kit.
+Nuka-Cherry Pie, P079, 70, Nuka-World, 6.50, Perishable, Dessert, A sweet and tart cherry pie made with Nuka-Cherry soda for an explosive flavor.
+Rad-Away Lemonade, P080, 100, Wasteland Refreshments, 4.25, Beverage, A tangy lemonade that helps you detoxify after a long day in the wasteland.
+Deathclaw Steak, P081, 50, The Slugger, 24.99, Perishable, Meat, Tender and flavorful steak sourced from the fearsome Deathclaw, a rare delicacy.
+Nuka-Cola Dark Roast Coffee, P082, 60, Nuka-World, 3.50, Beverage, A bold coffee blend infused with the flavors of Nuka-Cola, ideal for starting your day.
+Sugar Bombs Cereal, P083, 120, Pre-War America, 5.75, Non-Perishable, Cereal, A sugary breakfast cereal packed with flavor, popular among kids before the bombs fell.
+Fusion Flea Market Jerky, P084, 80, Fusion City, 9.99, Non-Perishable, Snacks, A spicy jerky made from a blend of meats, perfect for scavenging in the wasteland.
+Pork N' Beans, P085, 150, Vault-Tec, 2.49, Non-Perishable, Canned Food, Classic canned pork and beans, a quick and easy meal for any survivor.
+Mysterious Serum, P086, 50, The Institute, 17.50, Health, An experimental serum that promises enhanced abilities—use at your own risk.
+Cram Burger, P087, 90, The Radroach Café, 7.99, Perishable, Meal, A burger made from Cram, a favorite among Vault dwellers seeking a quick bite.
+Whiskey Rebellion, P088, 75, The Dugout Inn, 15.00, Beverage, A smooth whiskey aged in pre-war barrels, perfect for winding down after a long day in the wasteland.
+Fettuccine Alfredo Twirls, P089, 120, Italian Delights, 3.99, Non-Perishable, Pasta, Delicious twirls of fettuccine coated in creamy Alfredo sauce for an indulgent meal.
+Whole Grain Penne, P090, 200, Healthy Harvest, 2.49, Non-Perishable, Pasta, Nutritious whole grain penne, perfect for hearty pasta dishes and salads.
+Saffron Tagliatelle, P091, 80, Gourmet Grains, 5.99, Perishable, Pasta, Luxurious saffron-infused tagliatelle, ideal for elegant dinners.
+Spicy Arrabbiata Fusilli, P092, 150, Zesty Kitchen, 4.25, Non-Perishable, Pasta, Spiral fusilli pasta tossed in a spicy tomato sauce, perfect for a quick meal.
+Spinach & Ricotta Ravioli, P093, 90, Pasta Perfection, 6.75, Perishable, Pasta, Fresh ravioli filled with creamy ricotta and spinach, best served with a light sauce.
+Pesto Bowtie Pasta, P094, 100, Basil Bliss, 4.99, Non-Perishable, Pasta, Bowtie pasta dressed in fragrant basil pesto, ideal for summer salads.
+Lentil Lasagna Sheets, P095, 70, Healthy Harvest, 5.50, Non-Perishable, Pasta, Nutritious lasagna sheets made from lentils, perfect for a protein-packed dish.
+Wild Mushroom Farfalle, P096, 60, Earthy Bites, 5.99, Perishable, Pasta, Farfalle pasta tossed with a blend of wild mushrooms for a savory meal.
+Beetroot Spaghetti, P097, 80, Colorful Cuisine, 4.75, Non-Perishable, Pasta, Vibrant spaghetti made from beetroot, adding a unique flavor and color to your plate.
+Cheddar Macaroni, P098, 150, Cheesy Bites, 2.99, Non-Perishable, Pasta, Classic macaroni paired with rich cheddar cheese for a comforting dish.
+Seafood Linguine, P099, 90, Ocean’s Bounty, 8.99, Perishable, Pasta, Linguine pasta served with a medley of fresh seafood in a garlic white wine sauce.
+Carrot Noodles, P100, 120, Wholesome Noodles, 3.50, Non-Perishable, Pasta, Spiralized carrots offering a low-carb pasta alternative, perfect for health-conscious meals.
+Butt Stallion's Diamond Encrusted Pasta, P101, 50, Butt Stallion's Culinary Creations, 29.99, Non-Perishable, Pasta, Exquisite diamond-encrusted pasta that adds a touch of luxury to any meal—perfect for the most discerning of palates.

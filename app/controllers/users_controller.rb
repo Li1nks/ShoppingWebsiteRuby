@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id  # Log the user in after successful registration
       flash[:notice] = "Account created successfully!"  # Success message
-      redirect_to root_path
+      redirect_to login_path
     else
       flash[:alert] = "There was an error creating your account. Please try again."  # Error message
       render :new  # Re-render the new user form with error messages

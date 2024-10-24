@@ -108,16 +108,31 @@ letter/digit limit of the password aswell.
 
         <!-- Password field -->
         <%= f.label :password %>
-        <%= f.password_field :password %><br>
+        <%= f.password_field :password, id: "password" %><br>
 
         <!-- Password confirmation field -->
         <%= f.label :password_confirmation, "Confirm Password" %>
-        <%= f.password_field :password_confirmation %><br>
+        <%= f.password_field :password_confirmation, id: "password_confirmation" %><br>
 
         <!-- Submit button -->
         <%= f.submit "Create Account", class: "button" %>
 
       <% end %>
     </div>
+
+    <!-- Client-side validation script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector('form');
+        const passwordField = document.getElementById('password');
+        
+        form.addEventListener('submit', function(event) {
+          if (passwordField.value.length < 6) {
+            alert('Password must be at least 6 characters long.');
+            event.preventDefault();  // Prevent form submission
+          }
+        });
+      });
+    </script>
   </body>
 </html>
