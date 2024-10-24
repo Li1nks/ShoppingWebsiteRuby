@@ -1,7 +1,7 @@
-Sunrise Bacon, P001, 100, Farmer's Best, 12.50, Frozen, Meat, Crispy and savory bacon, perfect for breakfast or adding flavor to any dish.
-Golden Harvest Carrots, P002, 200, Green Valley Farms, 7.99, Fresh, Vegetable, Fresh, sweet carrots that are great for snacking or cooking.
-Crunchy Peanut Delight, P003, 50, Nutty Creations, 19.99, Non-Perishable, A delightful mix of crunchy peanuts and honey for a perfect snack.
-Ocean Fresh Salmon, P004, 150, SeaMaster Inc., 14.75, Frozen, Fish, Sustainably sourced salmon fillets, rich in omega-3 fatty acids.
+Sunrise Bacon, P001, 100, Farmer's Best, 12.50, Frozen, Meat, Crispy and savory bacon, perfect for breakfast or adding flavor to any dish., https://www.kroger.com/product/images/large/front/0081752000234
+Golden Harvest Carrots, P002, 200, Green Valley Farms, 7.99, Fresh, Vegetable, Fresh, sweet carrots that are great for snacking or cooking., https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlrNsSJbJyCU4sko-fXM3nemAGBLQxk66-5g&s
+Crunchy Peanut Delight, P003, 50, Nutty Creations, 19.99, Non-Perishable, A delightful mix of crunchy peanuts and honey for a perfect snack., https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fsavory-sweet-salty-crispy-crunchy-coated-peanuts-v0-zh0z2o9ps6cd1.jpg%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D5827e6d6f17ec11c56ffe9487002ed041e1c9eb6
+Ocean Fresh Salmon, P004, 150, SeaMaster Inc., 14.75, Frozen, Fish, Sustainably sourced salmon fillets, rich in omega-3 fatty acids. ,https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_600,h_400/https://groomerseafood.com/wp-content/uploads/2023/01/canadian-salmon-600x400.png
 Sizzlin’ Steak Strips, P005, 90, Carnivore Classics, 24.50, Perishable, Meat, Tender strips of steak, marinated for flavor and ready for grilling.
 Berry Blast Yogurt, P006, 75, Dairy Supreme, 5.99, Perishable, Dairy, Creamy yogurt loaded with mixed berries for a delicious treat.
 Tropical Mango Slices, P007, 120, Fruitopia, 6.49, Fresh, Fruit, Sweet and juicy mango slices, perfect for smoothies or snacking.

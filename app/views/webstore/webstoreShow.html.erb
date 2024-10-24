@@ -59,7 +59,7 @@ food types like fresh vegetables and bread.
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your desired background */
+      background-image: url('https://mldi5dmmdvnt.i.optimole.com/w:1920/h:1440/q:90/f:avif/https://simtechdev.com/wp-content/uploads/2020/10/online-grocery-stores.jpg'); /* Replace with your desired background */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -105,11 +105,48 @@ food types like fresh vegetables and bread.
     p {
       font-size: 18px;
     }
+    .product-tile {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 15px;
+      margin: 10px;
+      display: inline-block;
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: left;
+      color: #000;
+    }
+
+    .product-tile img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-tile h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .product-tile p {
+      margin: 5px 0;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .product-price {
+      font-weight: bold;
+      color: #4CAF50;
+    }
   </style>
 </head>
 <body>
 
-  <div class="navbar">
+<div class="navbar">
     <button onclick="location.href='/shopping'">Shopping</button>
     <button onclick="location.href='/about'">About Us</button>
     <button onclick="location.href='/location'">Location</button>
@@ -130,10 +167,22 @@ food types like fresh vegetables and bread.
 
   <div class="content">
     <h1>Welcome to the Webstore!</h1>
-    <p>Find me in app/views/webstore/show.html.erb</p>
-    <!-- Add your webstore content here -->
+
+    <div class="product-grid">
+      <!-- Loop through random products from the database -->
+      <% Product.order("RANDOM()").limit(5).each do |product| %>
+        <div class="product-tile">
+          <!-- Placeholder for product image -->
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjWfR3WxOX_y-YY3qLMjy0S6ys-nkiI2qgw&s" alt="<%= product.product_name %>">
+
+          <h3><%= product.product_name %></h3>
+          <p>Manufacturer: <%= product.manufacturer %></p>
+          <p>Category: <%= product.food_types %></p>
+          <p class="product-price">$<%= product.price %></p>
+        </div>
+      <% end %>
+    </div>
   </div>
 
 </body>
 </html>
-
