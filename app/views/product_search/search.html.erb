@@ -1,3 +1,45 @@
+<%#
+    Written by : Michael Watkins
+    Date : 10/29/24
+    Desc : Search result page
+
+    TO-DO :
+        Tile card Search Results. Look us CSS Cards that move when hovered over. 
+
+ %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <meta name="viewport" content="Width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            background-image: url('https://miro.medium.com/v2/resize:fit:952/1*OAXivevUVDA6ddtq-7jwVw.gif');
+            background-position: center;
+            background-repeat:repeat;
+            height: 100vh;
+            color: #fff;
+            color: white;
+            font-size: 48px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
 <div class="content">
   <h1>Search Results for "<%= @query %>"</h1>
 
@@ -17,3 +59,8 @@
     <% end %>
   </div>
 </div>
+
+</body>
+</html>
+
+
