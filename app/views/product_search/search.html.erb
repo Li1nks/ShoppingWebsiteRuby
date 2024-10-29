@@ -1,0 +1,19 @@
+<div class="content">
+  <h1>Search Results for "<%= @query %>"</h1>
+
+  <div class="product-grid">
+    <% if @products.any? %>
+      <% @products.each do |product| %>
+        <div class="product-tile">
+          <img src="<%= product.image_url %>" alt="<%= product.product_name %>">
+          <h3><%= product.product_name %></h3>
+          <p>Manufacturer: <%= product.manufacturer %></p>
+          <p>Category: <%= product.food_types %></p>
+          <p class="product-price">$<%= product.price %></p>
+        </div>
+      <% end %>
+    <% else %>
+      <p>No products found for "<%= @query %>"</p>
+    <% end %>
+  </div>
+</div>

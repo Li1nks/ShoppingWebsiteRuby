@@ -169,21 +169,25 @@ food types like fresh vegetables and bread.
   <div class="content">
     <h1>Welcome to the Webstore!</h1>
 
-    <div class="product-grid">
-      <!-- Loop through random products from the database -->
-      <% Product.order("RANDOM()").limit(5).each do |product| %>
-        <div class="product-tile">
-          <!-- Placeholder for product image -->
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjWfR3WxOX_y-YY3qLMjy0S6ys-nkiI2qgw&s" alt="<%= product.product_name %>">
+      <!-- Search Form -->
+    <form action="/products_search" method="get">
+      <input type="text" name="query" placeholder="Search for products..." style="padding: 8px; width: 200px;">
+      <button type="submit" style="padding: 8px;">Search</button>
+    </form>
 
-          <h3><%= product.product_name %></h3>
-          <p>Manufacturer: <%= product.manufacturer %></p>
-          <p>Category: <%= product.food_types %></p>
-          <p class="product-price">$<%= product.price %></p>
-        </div>
-      <% end %>
+    <div class="product-grid">
+        <!-- Loop through random products from the database -->
+        <% Product.order("RANDOM()").limit(5).each do |product| %>
+          <div class="product-tile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjWfR3WxOX_y-YY3qLMjy0S6ys-nkiI2qgw&s" alt="<%= product.product_name %>">
+            <h3><%= product.product_name %></h3>
+            <p>Manufacturer: <%= product.manufacturer %></p>
+            <p>Category: <%= product.food_types %></p>
+            <p class="product-price">$<%= product.price %></p>
+          </div>
+        <% end %>
+      </div>
     </div>
-  </div>
 
 </body>
 </html>
