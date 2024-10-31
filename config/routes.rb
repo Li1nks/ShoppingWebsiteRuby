@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get "webstore_tabs/shopping"
+  get "webstore_tabs/about_us"
+  get "webstore_tabs/location"
+  get "webstore_tabs/checkout"
   get "webstore/show"
   get "accounts/index"
   get "pages/home"
@@ -30,4 +34,8 @@ Rails.application.routes.draw do
   get "new", to: "users#new"
   get "webstore", to: "webstore#webstoreShow"
   get "products_search", to: "product_search#search"
+  get "/shopping", to: "webstore_tabs#shopping"
+  get "/about_us", to: "webstore_tabs#about_us"
+  get "/location", to: "webstore_tabs#location"
+  get "/checkout", to: "webstore_tabs#checkout"
 end
