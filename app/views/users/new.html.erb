@@ -114,6 +114,26 @@ letter/digit limit of the password aswell.
         <%= f.label :password_confirmation, "Confirm Password" %>
         <%= f.password_field :password_confirmation, id: "password_confirmation" %><br>
 
+        <!-- User's Name -->
+        <%= f.label :name, "Name" %>
+        <%= f.text_field :name, id: "name" %><br>
+
+        <!-- Age -->
+        <%= f.label :age, "Age" %>
+        <%= f.number_field :age, id: "age" %><br>
+
+        <!-- Gender -->
+        <%= f.label :gender, "Gender" %>
+        <%= f.select :gender, [["Male", "male"], ["Female", "female"], ["Other", "other"], ["Prefer not to say", "prefer_not_to_say"]], {}, id: "gender" %><br>
+
+        <!-- Address -->
+        <%= f.label :address, "Address" %>
+        <%= f.text_field :address, id: "address" %><br>
+
+        <!-- Phone Number -->
+        <%= f.label :phone_number, "Phone Number" %>
+        <%= f.telephone_field :phone_number, id: "phone_number" %><br>
+
         <!-- Submit button -->
         <%= f.submit "Create Account", class: "button" %>
 
