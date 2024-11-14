@@ -83,7 +83,7 @@ TO-DO :
             top: 50%;
             transform: translateY(-50%);
         }
-        }
+    
 
 
 
@@ -136,8 +136,9 @@ TO-DO :
         background-size: cover;
         background-position: center;
         background-repeat: repeat-y;
-        height: 100vh;
         color: #fff;
+        overflow:hidden; 
+        overflow-y:scroll;
         }
 
         .navbar {
@@ -145,9 +146,8 @@ TO-DO :
         padding: 15px;
         position: fixed;
         top: 0;
-        left: 0;
         width: 100%;
-        z-index: 1000;
+        z-index: 1;
         }
 
         .navbar button {
@@ -187,6 +187,7 @@ TO-DO :
         display: inline-block;
         width: 200px;
         border-radius: 10px;
+        box-sizing: border-box;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         text-align: left;
         color: #000;
@@ -219,10 +220,6 @@ TO-DO :
         }
 
 
-        .spacer { 
-            height: 100px;
-            width: 100px;
-        }
 
     </style>
 </head>
