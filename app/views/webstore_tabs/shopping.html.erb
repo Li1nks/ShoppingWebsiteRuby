@@ -249,13 +249,13 @@ TO-DO :
         <hr>
         <div class="spacer"></div>
         <div class="product-grid">
-            <% Product.order("Random()").limit(25) .each do |product|%>
+            <% Product.order("Random()").limit(50) .each do |product|%>
                 <div class="product-tile">
                     <h3><%= product.product_name %></h3>
                     <p>Manufacturer: <%= product.manufacturer %></p>
                     <p>Category: <%= product.food_types %></p>
                     <p class="product-price">$<%= product.price %></p>
-                    <button class="corner-button">Checkout</button>
+                    <button class="corner-button">Add To Cart</button>
                 </div>
             <% end %>
       </div>
