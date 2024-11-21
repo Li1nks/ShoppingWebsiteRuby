@@ -1,2 +1,86 @@
-<h1>WebstoreTabs#checkout</h1>
-<p>Find me in app/views/webstore_tabs/checkout.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .cart-items {
+      margin-top: 50px;
+    }
+    .cart-items table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    .cart-items table, .cart-items th, .cart-items td {
+      border: 1px solid #ddd;
+    }
+    .cart-items th, .cart-items td {
+      padding: 15px;
+      text-align: left;
+    }
+    .total-price {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .checkout-button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .checkout-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Checkout</h1>
+
+  <div class="cart-items">
+    <% if @cart.items.empty? %>
+      <p>Your cart is empty!</p>
+    <% else %>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @cart.items.each do |item| %>
+            <tr>
+              <td><%= item.product_name %></td>
+              <td>$<%= item.price %></td>
+              <td>1</td> <!-- Assuming each item is added once; adjust if needed -->
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+      <p class="total-price">Total: $<%= @cart.total_price %></p>
+
+      <!-- Checkout form (add payment details, address, etc. if needed) -->
+      <%= form_for :order, url: checkout_path do |f| %>
+        <!-- You can add fields like address, payment method, etc. -->
+        <%= f.submit 'Complete Purchase', class: 'checkout-button' %>
+      <% end %>
+    <% end %>
+  </div>
+
+</body>
+</html>

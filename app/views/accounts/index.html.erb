@@ -44,7 +44,7 @@
         <td>
           <%= link_to 'Show', user_path(user), class: "button" %> |
           <%= link_to 'Edit', edit_user_path(user), class: "button" %> |
-          <!-- Delete button with confirmation popup -->
+          <!-- Delete button with confirmation popup doesn't work lol -->
           <%= button_to 'Delete', user_path(user), method: :delete, data: { confirm: "Are you sure you want to delete this user?" }, class: "button" %>
         </td>
       </tr>

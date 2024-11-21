@@ -38,4 +38,5 @@ Rails.application.routes.draw do
   get "/about_us", to: "webstore_tabs#about_us"
   get "/location", to: "webstore_tabs#location"
   get "/checkout", to: "webstore_tabs#checkout"
+  post "/cart/add", to: "cart#add_to_cart"
 end
