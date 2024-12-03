@@ -15,10 +15,17 @@ To-DO:
 
 <p><strong>ID:</strong> <%= @user.id %></p>
 <p><strong>Username:</strong> <%= @user.username %></p>
-
-<p><strong>Email:</strong> <%= @user.email%></p>
-<!-- Display the hashed password if necessary, though showing passwords is generally discouraged -->
+<p><strong>Email:</strong> <%= @user.email %></p>
 <p><strong>Password (hashed):</strong> <%= @user.password_digest %></p>
+<p><strong>Created At:</strong> <%= @user.created_at %></p>
+<p><strong>Updated At:</strong> <%= @user.updated_at %></p>
+<p><strong>Name:</strong> <%= @user.name %></p>
+<p><strong>Age:</strong> <%= @user.age %></p>
+<p><strong>Gender:</strong> <%= @user.gender %></p>
+<p><strong>Address:</strong> <%= @user.address %></p>
+<p><strong>Phone Number:</strong> <%= @user.phone_number %></p>
+
+
 
 <!-- Edit and Delete links -->
 <%= link_to 'Edit', edit_user_path(@user), class: "button" %> |
