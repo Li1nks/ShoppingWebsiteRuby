@@ -65,7 +65,7 @@ This will create the database and apply any necessary schema changes.
 
 You can now start the Rails development server with:
 
-rails server or rails s in your project console
+rails server or rails s ; in your project console
 
 This will start the Rails server on `http://localhost:3000` by default. You can open this URL in your web browser to view the application.
 
@@ -73,5 +73,5 @@ This will start the Rails server on `http://localhost:3000` by default. You can 
 
 You can customize the application by editing the files in the `app/` directory, including the controllers, views, and models.
 
-If you are using a different database (e.g., PostgreSQL or MySQL), you may need to update your `config/database.yml` file with the appropriate settings for your environment.
+If you are using a different database (e.g., PostgreSQL or MySQL), you may need to update your `config/database.yml` file with the appropriate settings for your environment. And make the appropriate changes to the actual program I'm unsure how changing will affect how it is coded. 
 
