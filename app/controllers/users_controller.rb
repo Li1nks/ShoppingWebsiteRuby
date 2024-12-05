@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :require_login, only: [ :show ]  # Ensure users are logged in to access their profile
+  before_action :require_login, only: [ :show, :edit, :update, :index ] # Ensure users are logged in to access these actions
 
   def new
     @user = User.new
@@ -29,6 +29,23 @@ class UsersController < ApplicationController
           puts JSON.pretty_generate(@schema_info) # This will print the schema info to the Rails console
         end
   end
+
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update(user_params)
+      flash[:notice] = "User updated successfully."
+      redirect_to user_path(@user)
+    else
+      puts @user.errors.full_messages  # Log validation errors
+      flash[:alert] = "There was an error updating the user: #{@user.errors.full_messages.join(', ')}"
+      render :edit
+    end
+  end
+
 
   def destroy
     @user = User.find(params[:id])
